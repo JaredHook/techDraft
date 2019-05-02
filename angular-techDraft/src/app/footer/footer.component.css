@@ -53,7 +53,7 @@ ul {
 li {
   color: darkgrey;
   float: left;
-  padding-left: 5px;
+  padding-left: 15px;
 }
 
 a:link, a:visited {
