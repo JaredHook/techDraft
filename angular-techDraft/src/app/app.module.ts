@@ -3,10 +3,12 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { GgithabButtonComponent } from './ggithab-button/ggithab-button.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    GgithabButtonComponent
   ],
   imports: [
     BrowserModule,
