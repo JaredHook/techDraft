@@ -1,0 +1,3 @@
+C:\Users\grego\Documents\development\techDraft\angular-techDraft\obj\Debug\techDraft.njsprojAssemblyReference.cache
+C:\Users\grego\Documents\development\techDraft\angular-techDraft\obj\Debug\techDraft.njsproj.CoreCompileInputs.cache
+C:\Users\grego\Documents\development\techDraft\angular-techDraft\bin\Microsoft.NodejsTools.WebRole.dll
