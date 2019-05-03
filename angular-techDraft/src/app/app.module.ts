@@ -9,7 +9,7 @@ import { ContentCardComponent } from './content-card/content-card.component';
     AppComponent,
     NewsletterformComponent,
     ContentCardComponent,
-  ],
+   ],
   imports: [
     BrowserModule,
     AppRoutingModule
