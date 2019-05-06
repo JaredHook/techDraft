@@ -7,6 +7,10 @@ import { TopNavBarComponent } from './top-nav-bar/top-nav-bar.component';
 import { GgithabButtonComponent } from './ggithab-button/ggithab-button.component';
 import { ShaksCallToActionCompComponent } from './shaks-call-to-action-comp/shaks-call-to-action-comp.component';
 import { BottomComponent } from './bottom/bottom.component';
+//import { FooterComponent } from './footer/footer.component';
+import { GgithabButtonComponent } from './ggithab-button/ggithab-button.component';
+import { ShaksCallToActionCompComponent } from './shaks-call-to-action-comp/shaks-call-to-action-comp.component';
+import { ThemeComponent } from './theme/theme.component';
 
 @NgModule({
   declarations: [
@@ -17,6 +21,8 @@ import { BottomComponent } from './bottom/bottom.component';
     NewsletterformComponent,
     TopNavBarComponent,
     BottomComponent,
+    ThemeComponent,
+   // FooterComponent,
   ],
    
   imports: [
