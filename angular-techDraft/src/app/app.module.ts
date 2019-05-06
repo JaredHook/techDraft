@@ -4,7 +4,6 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ButtonBoxComponent } from './button-box/button-box.component';
 import { NewsletterformComponent } from './newsletterform/newsletterform.component';
-import { ContentCardComponent } from './content-card/content-card.component'; 
 import { TopNavBarComponent } from './top-nav-bar/top-nav-bar.component';
 import { BottomComponent } from './bottom/bottom.component';
 import { GgithabButtonComponent } from './ggithab-button/ggithab-button.component';
@@ -17,9 +16,6 @@ import { ThemeComponent } from './theme/theme.component';
     GgithabButtonComponent,
     ShaksCallToActionCompComponent,
     ButtonBoxComponent,
-    GgithabButtonComponent,
-    ShaksCallToActionCompComponent,
-    AppComponent,
     NewsletterformComponent,
     TopNavBarComponent,
     BottomComponent,
