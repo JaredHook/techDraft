@@ -4,19 +4,21 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NewsletterformComponent } from './newsletterform/newsletterform.component';
 import { TopNavBarComponent } from './top-nav-bar/top-nav-bar.component';
-import { FooterComponent } from './footer/footer.component';
+//import { FooterComponent } from './footer/footer.component';
 import { GgithabButtonComponent } from './ggithab-button/ggithab-button.component';
 import { ShaksCallToActionCompComponent } from './shaks-call-to-action-comp/shaks-call-to-action-comp.component';
+import { ThemeComponent } from './theme/theme.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    GgithabButtonComponent
+    GgithabButtonComponent,
     ShaksCallToActionCompComponent,
     AppComponent,
-    NewsletterformComponent
+    NewsletterformComponent,
     TopNavBarComponent,
-    FooterComponent
+    ThemeComponent,
+   // FooterComponent,
   ],
    
   imports: [
