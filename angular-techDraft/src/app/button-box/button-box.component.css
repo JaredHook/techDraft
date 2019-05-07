@@ -1,0 +1,9 @@
+.ui.icon.header .icon {
+  height: 65px;
+  width: 80px;
+}
+
+.boxspacing {
+  margin: 2em;
+  padding: 2em;
+}
