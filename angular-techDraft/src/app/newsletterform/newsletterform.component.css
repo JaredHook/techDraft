@@ -1,0 +1,21 @@
+.ui.email.alternate.stripe.vertical.segment {
+  background-color: lightgrey;
+}
+
+.ui.form {
+  width: auto;
+}
+
+.ui.medium.input {
+  display: block;
+}
+
+.ui.medium.secondary.submit.button {
+  box-sizing: inherit;
+}
+
+.ui.grid {
+  display: flex;
+  -webkit-box-orient: horizontal;
+  flex-direction: row;
+}
