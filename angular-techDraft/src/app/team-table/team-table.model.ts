@@ -7,5 +7,4 @@ export class TeamTable {
     this.teamName = teamName;
     this.score = score || 0;
   }
-
 }

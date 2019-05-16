@@ -23,5 +23,4 @@ export class TeamTableComponent implements OnInit {
 
   ngOnInit() {
   }
-
 }
