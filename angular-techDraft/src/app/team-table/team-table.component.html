@@ -1,0 +1,12 @@
+<div class="ui divided items">
+  <div class="item" *ngFor="let teamtable of sortedTeamTables(); let i = index">
+    <div class="content">
+      <div class="left floated statistic">{{ i + 1 }}</div>
+      <img class="left floated mini ui circular image" src="/assets/images/image.png">
+      <div class="left floated">
+        <div class="header">{{ teamtable.teamName }}</div>
+        <div class="meta">{{ teamtable.score }}</div>
+      </div>
+    </div>
+  </div>
+</div>
