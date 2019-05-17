@@ -1,5 +1,4 @@
 export class TeamTable {
-
   teamName: string;
   score: number;
 
