@@ -9,6 +9,7 @@ import { GgithabButtonComponent } from './ggithab-button/ggithab-button.componen
 import { ShaksCallToActionCompComponent } from './shaks-call-to-action-comp/shaks-call-to-action-comp.component';
 import { BottomComponent } from './bottom/bottom.component';
 import { ThemeComponent } from './theme/theme.component';
+import { EditProfileCompComponent } from './edit-profile-comp/edit-profile-comp.component';
 
 @NgModule({
   declarations: [
@@ -21,6 +22,7 @@ import { ThemeComponent } from './theme/theme.component';
     TopNavBarComponent,
     BottomComponent,
     ThemeComponent,
+    EditProfileCompComponent,
   ],
    
   imports: [
