@@ -2,9 +2,6 @@
 
 .col {
   max-width: 450px;
-  margin: 343px 450px 343px 450px;
-  /*align-self: center;*/
-  /* position: relative;*/
   background-color: black;
   padding: 20px 40px 40px 40px;
 }
