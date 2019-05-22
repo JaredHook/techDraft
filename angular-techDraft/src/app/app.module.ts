@@ -9,10 +9,9 @@ import { GgithabButtonComponent } from './ggithab-button/ggithab-button.componen
 import { ShaksCallToActionCompComponent } from './shaks-call-to-action-comp/shaks-call-to-action-comp.component';
 import { BottomComponent } from './bottom/bottom.component';
 import { ThemeComponent } from './theme/theme.component';
+import { SidebarComponent } from './sidebar/sidebar.component';
 import { TeamTableComponent } from './team-table/team-table.component';
-import { MyNavComponent } from './my-nav/my-nav.component';
 import { HomePageComponent } from './home-page/home-page.component';
-
 
 @NgModule({
   declarations: [
@@ -25,8 +24,8 @@ import { HomePageComponent } from './home-page/home-page.component';
     TopNavBarComponent,
     BottomComponent,
     ThemeComponent,
+    SidebarComponent,
     TeamTableComponent,
-    MyNavComponent,
     HomePageComponent,
   ],
    
