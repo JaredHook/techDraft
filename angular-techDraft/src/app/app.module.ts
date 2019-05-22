@@ -11,7 +11,6 @@ import { BottomComponent } from './bottom/bottom.component';
 import { ThemeComponent } from './theme/theme.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { TeamTableComponent } from './team-table/team-table.component';
-import { MyNavComponent } from './my-nav/my-nav.component';
 import { HomePageComponent } from './home-page/home-page.component';
 
 @NgModule({
@@ -27,7 +26,6 @@ import { HomePageComponent } from './home-page/home-page.component';
     ThemeComponent,
     SidebarComponent,
     TeamTableComponent,
-    MyNavComponent,
     HomePageComponent,
   ],
    
