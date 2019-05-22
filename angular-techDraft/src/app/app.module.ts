@@ -1,5 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { MatDialogModule } from '@angular/material';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ButtonBoxComponent } from './button-box/button-box.component';
@@ -10,8 +12,10 @@ import { ShaksCallToActionCompComponent } from './shaks-call-to-action-comp/shak
 import { BottomComponent } from './bottom/bottom.component';
 import { ThemeComponent } from './theme/theme.component';
 import { TeamTableComponent } from './team-table/team-table.component';
-import { MyNavComponent } from './my-nav/my-nav.component';
+//import { MyNavComponent } from './my-nav/my-nav.component';
 import { HomePageComponent } from './home-page/home-page.component';
+import { LoginPopoutComponent } from './login-popout/login-popout.component';
+import { LoginComponent } from './login/login.component';
 
 
 @NgModule({
@@ -26,15 +30,20 @@ import { HomePageComponent } from './home-page/home-page.component';
     BottomComponent,
     ThemeComponent,
     TeamTableComponent,
-    MyNavComponent,
+    //MyNavComponent,
     HomePageComponent,
+    LoginPopoutComponent,
+    LoginComponent,
   ],
    
   imports: [
     BrowserModule,
     AppRoutingModule,
+    MatDialogModule,
+    BrowserAnimationsModule,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  entryComponents: [LoginPopoutComponent]
 })
 export class AppModule { }
