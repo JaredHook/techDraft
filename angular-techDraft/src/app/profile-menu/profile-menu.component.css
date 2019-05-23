@@ -1,0 +1,32 @@
+h1 {
+  min-height: 1rem;
+  font-size: 2rem;
+  padding: 10px;
+}
+
+i.big.icon,
+i.big.icons {
+  line-height: 1.1;
+  vertical-align: middle;
+  font-size: 2em;
+  padding: 15px 0 0 150px;
+  color: lightgray;
+}
+
+.ui.horizontal.segments > .segment,
+.ui.container {
+  border: none;
+  width: 50%;
+  padding: 20px 0 25px 10px;
+}
+
+i.huge.icon,
+i.huge.icons {
+  padding: 5px;
+  color: lightgray;
+  float: left;
+}
+
+.profile1 {
+  padding: 10px 15px;
+}

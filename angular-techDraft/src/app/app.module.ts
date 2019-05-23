@@ -16,6 +16,15 @@ import { TeamTableComponent } from './team-table/team-table.component';
 import { HomePageComponent } from './home-page/home-page.component';
 import { LoginPopoutComponent } from './login-popout/login-popout.component';
 import { LoginComponent } from './login/login.component';
+import { Routes, RouterModule } from '@angular/router';
+import { UserProfileComponent } from './user-profile/user-profile.component';
+import { EditProfileCompComponent } from './edit-profile-comp/edit-profile-comp.component';
+import { TabComponent } from './tab/tab.component';
+
+const routes: Routes = [
+  { path: '', component: HomePageComponent },
+  { path: 'userProfile', component: UserProfileComponent}
+];
 
 @NgModule({
   declarations: [
@@ -33,6 +42,10 @@ import { LoginComponent } from './login/login.component';
     HomePageComponent,
     LoginPopoutComponent,
     LoginComponent,
+    UserProfileComponent,
+    EditProfileCompComponent,
+    TabComponent,
+    TeamTableComponent
   ],
    
   imports: [
@@ -40,6 +53,7 @@ import { LoginComponent } from './login/login.component';
     AppRoutingModule,
     MatDialogModule,
     BrowserAnimationsModule,
+    RouterModule.forRoot(routes) 
   ],
   providers: [],
   bootstrap: [AppComponent],
