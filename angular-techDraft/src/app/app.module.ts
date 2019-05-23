@@ -12,6 +12,15 @@ import { ThemeComponent } from './theme/theme.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { TeamTableComponent } from './team-table/team-table.component';
 import { HomePageComponent } from './home-page/home-page.component';
+import { Routes, RouterModule } from '@angular/router';
+import { UserProfileComponent } from './user-profile/user-profile.component';
+import { EditProfileCompComponent } from './edit-profile-comp/edit-profile-comp.component';
+import { TabComponent } from './tab/tab.component';
+
+const routes: Routes = [
+  { path: '', component: HomePageComponent },
+  { path: 'userProfile', component: UserProfileComponent}
+];
 
 @NgModule({
   declarations: [
@@ -27,11 +36,15 @@ import { HomePageComponent } from './home-page/home-page.component';
     SidebarComponent,
     TeamTableComponent,
     HomePageComponent,
+    UserProfileComponent,
+    EditProfileCompComponent,
+    TabComponent,
+    TeamTableComponent
   ],
    
   imports: [
     BrowserModule,
-    AppRoutingModule,
+    RouterModule.forRoot(routes) 
   ],
   providers: [],
   bootstrap: [AppComponent]
