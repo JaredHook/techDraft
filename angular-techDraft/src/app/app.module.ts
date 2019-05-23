@@ -34,7 +34,6 @@ const routes: Routes = [
     BottomComponent,
     ThemeComponent,
     SidebarComponent,
-    TeamTableComponent,
     HomePageComponent,
     UserProfileComponent,
     EditProfileCompComponent,
