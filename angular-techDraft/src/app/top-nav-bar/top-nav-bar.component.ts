@@ -1,5 +1,5 @@
 import { Component, OnInit, Inject } from '@angular/core';
-import { MatDialog, MatDialogRef, MAT_DIALOG_DATA } from '@angular/material';
+import { MatDialog, MatDialogRef, MatDialogConfig, MAT_DIALOG_DATA } from '@angular/material';
 import { LoginPopoutComponent } from '../login-popout/login-popout.component';
 
 @Component({
@@ -12,7 +12,8 @@ export class TopNavBarComponent implements OnInit {
   constructor(public dialog: MatDialog) { }
 
   openDialog(): void {
-    const dialogRef = this.dialog.open(LoginPopoutComponent);
+    const dialogConfig = new MatDialogConfig();
+    const dialogRef = this.dialog.open(LoginPopoutComponent, dialogConfig);
 
     dialogRef.afterClosed().subscribe();
   }
