@@ -1,0 +1,49 @@
+
+
+.col {
+  max-width: 450px;
+  background-color: black;
+  padding: 20px 40px 40px 40px;
+}
+
+h1 {
+  color: white;
+  text-align: center;
+  padding: 20px 0 20px 0;
+  font-weight: bold;
+  font-size: 24px;
+}
+
+#label1 {
+  color: #6e7589;
+  text-align: left;
+  font-size: 15px;
+  padding: 0 0 10px 0;
+}
+
+#label2, a {
+  color: #6e7589;
+  text-align:right;
+  font-size:15px;
+  font-weight: 700;
+}
+
+#input1 {
+  background-color: rgba(255, 255, 255, 0.15);
+}
+
+span{
+  color:black;
+}
+
+#label3 {
+  font-size: 15px;
+  text-align: center;
+  font-weight: 700;
+  color: white;
+  padding-top:15px;
+  border-bottom: 1px solid #777;
+}
+
+
+

@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Inject } from '@angular/core';
+import { MatDialog, MatDialogRef, MatDialogConfig, MAT_DIALOG_DATA } from '@angular/material';
+import { LoginPopoutComponent } from '../login-popout/login-popout.component';
 
 @Component({
   selector: 'app-top-nav-bar',
@@ -7,7 +9,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TopNavBarComponent implements OnInit {
 
-  constructor() { }
+  constructor(public dialog: MatDialog) { }
+
+  openDialog(): void {
+    const dialogConfig = new MatDialogConfig();
+    const dialogRef = this.dialog.open(LoginPopoutComponent, dialogConfig);
+
+    dialogRef.afterClosed().subscribe();
+  }
 
   ngOnInit() {
   }
