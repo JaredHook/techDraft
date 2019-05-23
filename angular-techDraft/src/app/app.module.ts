@@ -9,20 +9,17 @@ import { GgithabButtonComponent } from './ggithab-button/ggithab-button.componen
 import { ShaksCallToActionCompComponent } from './shaks-call-to-action-comp/shaks-call-to-action-comp.component';
 import { BottomComponent } from './bottom/bottom.component';
 import { ThemeComponent } from './theme/theme.component';
-// import { TeamTableComponent } from './team-table/team-table.component';
-//import { MyNavComponent } from './my-nav/my-nav.component';
+import { SidebarComponent } from './sidebar/sidebar.component';
+import { TeamTableComponent } from './team-table/team-table.component';
 import { HomePageComponent } from './home-page/home-page.component';
 import { Routes, RouterModule } from '@angular/router';
 import { UserProfileComponent } from './user-profile/user-profile.component';
 import { EditProfileCompComponent } from './edit-profile-comp/edit-profile-comp.component';
 import { TabComponent } from './tab/tab.component';
-import { TeamTableComponent } from './team-table/team-table.component';
-
 
 const routes: Routes = [
   { path: '', component: HomePageComponent },
   { path: 'userProfile', component: UserProfileComponent}
-
 ];
 
 @NgModule({
@@ -36,8 +33,8 @@ const routes: Routes = [
     TopNavBarComponent,
     BottomComponent,
     ThemeComponent,
+    SidebarComponent,
     TeamTableComponent,
-   // MyNavComponent,
     HomePageComponent,
     UserProfileComponent,
     EditProfileCompComponent,
