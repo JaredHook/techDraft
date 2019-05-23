@@ -1,5 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { MatDialogModule } from '@angular/material';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ButtonBoxComponent } from './button-box/button-box.component';
@@ -12,6 +14,8 @@ import { ThemeComponent } from './theme/theme.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { TeamTableComponent } from './team-table/team-table.component';
 import { HomePageComponent } from './home-page/home-page.component';
+import { LoginPopoutComponent } from './login-popout/login-popout.component';
+import { LoginComponent } from './login/login.component';
 import { Routes, RouterModule } from '@angular/router';
 import { UserProfileComponent } from './user-profile/user-profile.component';
 import { EditProfileCompComponent } from './edit-profile-comp/edit-profile-comp.component';
@@ -35,6 +39,8 @@ const routes: Routes = [
     ThemeComponent,
     SidebarComponent,
     HomePageComponent,
+    LoginPopoutComponent,
+    LoginComponent,
     UserProfileComponent,
     EditProfileCompComponent,
     TabComponent,
@@ -43,9 +49,13 @@ const routes: Routes = [
    
   imports: [
     BrowserModule,
+    AppRoutingModule,
+    MatDialogModule,
+    BrowserAnimationsModule,
     RouterModule.forRoot(routes) 
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  entryComponents: [LoginPopoutComponent]
 })
 export class AppModule { }
