@@ -16,37 +16,28 @@ section {
 }
 
 div {
-  background:pink;
   margin: auto;
   width:100px;
 }
 
 .header {
   width: 70%;
-  background-color:lightgray;
-  padding : 20px 40px 10px 50px;
   overflow: auto;
 }
 
-.header a {
   float:left;
-  padding: 50px;
   color: white;
   text-decoration: none;
   font-size: 24px;
 }
 
-.header a:hover {
-  background-color:plum;
 }
 
 .active {
-  background-color: turquoise;
   float: left;
 }
 
 @media screen and (max-width: 5500px) {
-  .header a {
     float: left;
     display: 
     row;
