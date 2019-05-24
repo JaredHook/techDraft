@@ -13,7 +13,6 @@ i.big.icons {
   color: lightgray;
 }
 
-
 .ui.container {
   border: none;
   width: 98%;
@@ -30,7 +29,6 @@ i.huge.icons {
 .profile1 {
   padding: 10px 15px;
 }
-
 
 .ui.horizontal.segments {
   display: flex;
