@@ -22,6 +22,7 @@ import { EditProfileCompComponent } from './edit-profile-comp/edit-profile-comp.
 import { TabComponent } from './tab/tab.component';
 import { AboutComponent } from './about/about.component';
 import { ProfileMenuComponent } from './profile-menu/profile-menu.component';
+import { ProgressBarComponent } from './progress-bar/progress-bar.component';
 
 const routes: Routes = [
   { path: '', component: HomePageComponent },
@@ -48,7 +49,8 @@ const routes: Routes = [
     TabComponent,
     TeamTableComponent,
     AboutComponent,
-    ProfileMenuComponent
+    ProfileMenuComponent,
+    ProgressBarComponent
   ],
    
   imports: [
