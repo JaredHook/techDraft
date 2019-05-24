@@ -20,10 +20,14 @@ import { Routes, RouterModule } from '@angular/router';
 import { UserProfileComponent } from './user-profile/user-profile.component';
 import { EditProfileCompComponent } from './edit-profile-comp/edit-profile-comp.component';
 import { TabComponent } from './tab/tab.component';
+import { AboutComponent } from './about/about.component';
+import { ProfileMenuComponent } from './profile-menu/profile-menu.component';
+import { ProgressBarComponent } from './progress-bar/progress-bar.component';
 
 const routes: Routes = [
   { path: '', component: HomePageComponent },
-  { path: 'userProfile', component: UserProfileComponent}
+  { path: 'userProfile', component: UserProfileComponent },
+  { path: 'userProfile/editProfile', component: EditProfileCompComponent }
 ];
 
 @NgModule({
@@ -44,7 +48,10 @@ const routes: Routes = [
     UserProfileComponent,
     EditProfileCompComponent,
     TabComponent,
-    TeamTableComponent
+    TeamTableComponent,
+    AboutComponent,
+    ProfileMenuComponent,
+    ProgressBarComponent
   ],
    
   imports: [
