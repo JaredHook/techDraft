@@ -13,11 +13,10 @@ i.big.icons {
   color: lightgray;
 }
 
-.ui.horizontal.segments > .segment,
 .ui.container {
   border: none;
-  width: 50%;
-  padding: 20px 0 25px 10px;
+  width: 98%;
+  /*padding: 20px 0 0 10px;*/
 }
 
 i.huge.icon,
@@ -30,3 +29,28 @@ i.huge.icons {
 .profile1 {
   padding: 10px 15px;
 }
+
+.ui.horizontal.segments {
+  display: flex;
+  flex-direction: row;
+  padding: 0;
+  background-color: #FFF;
+  box-shadow: 0 1px 2px 0 rgba(34,36,38,.15);
+  margin: 4rem 0 0 0 !important;
+  /*border-radius: .28571429rem;*/
+  border: 1px solid rgba(34,36,38,.15);
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+  .ui.horizontal.segments > .segment {
+    flex: 1 1 auto;
+    -ms-flex: 1 1 0px;
+    margin: 0;
+    min-width: 0;
+    background-color: transparent;
+    border-radius: 0;
+    border: none;
+    box-shadow: none;
+    border-left: 0;
+  }
