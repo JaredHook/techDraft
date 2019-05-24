@@ -26,7 +26,8 @@ import { ProgressBarComponent } from './progress-bar/progress-bar.component';
 
 const routes: Routes = [
   { path: '', component: HomePageComponent },
-  { path: 'userProfile', component: UserProfileComponent}
+  { path: 'userProfile', component: UserProfileComponent },
+  { path: 'userProfile/editProfile', component: EditProfileCompComponent }
 ];
 
 @NgModule({
