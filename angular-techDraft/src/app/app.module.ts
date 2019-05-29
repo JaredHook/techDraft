@@ -12,6 +12,7 @@ import { ThemeComponent } from './theme/theme.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { TeamTableComponent } from './team-table/team-table.component';
 import { HomePageComponent } from './home-page/home-page.component';
+import { HamburgerbuttonComponent } from './hamburgerbutton/hamburgerbutton.component';
 
 @NgModule({
   declarations: [
@@ -27,6 +28,7 @@ import { HomePageComponent } from './home-page/home-page.component';
     SidebarComponent,
     TeamTableComponent,
     HomePageComponent,
+    HamburgerbuttonComponent,
   ],
    
   imports: [
