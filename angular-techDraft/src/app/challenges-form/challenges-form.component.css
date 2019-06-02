@@ -1,0 +1,36 @@
+.ui[class*="top attached"].segment {
+  bottom: 0!important;
+  margin-bottom: 0!important;
+  top: 0!important;
+  margin-top: 1rem!important;
+  width: 33%;
+  vertical-align: top;
+}
+
+.ui.form input[type=text] {
+  width: 33%;
+  vertical-align: top;
+}
+
+.ui.form textarea {
+  width: 33% !important;
+  vertical-align: top;
+  font-family: Lato,'Helvetica Neue',Arial,Helvetica,sans-serif;
+  margin: 0;
+  outline: 0;
+  -webkit-appearance: none;
+  line-height: 1.2142em;
+  padding: .67861429em 1em;
+  font-size: 1em;
+  background: #FFF;
+  border: 1px solid rgba(34,36,38,.15);
+  color: rgba(0,0,0,.87);
+  border-radius: .28571429rem;
+  box-shadow: 0 0 0 0 transparent inset;
+  transition: color .1s ease,border-color .1s ease;
+}
+
+select.ui.dropdown {
+  width: 33%;
+  vertical-align: top;
+}
