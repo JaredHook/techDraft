@@ -2,6 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { MatDialogModule } from '@angular/material';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ButtonBoxComponent } from './button-box/button-box.component';
@@ -23,6 +24,7 @@ import { TabComponent } from './tab/tab.component';
 import { AboutComponent } from './about/about.component';
 import { ProfileMenuComponent } from './profile-menu/profile-menu.component';
 import { ProgressBarComponent } from './progress-bar/progress-bar.component';
+import { SignupComponent } from './signup/signup.component';
 
 const routes: Routes = [
   { path: '', component: HomePageComponent },
@@ -51,7 +53,8 @@ const routes: Routes = [
     TeamTableComponent,
     AboutComponent,
     ProfileMenuComponent,
-    ProgressBarComponent
+    ProgressBarComponent,
+    SignupComponent
   ],
    
   imports: [
@@ -59,10 +62,15 @@ const routes: Routes = [
     AppRoutingModule,
     MatDialogModule,
     BrowserAnimationsModule,
+    FormsModule,
+    ReactiveFormsModule,
     RouterModule.forRoot(routes) 
   ],
   providers: [],
   bootstrap: [AppComponent],
-  entryComponents: [LoginPopoutComponent]
+  entryComponents: [
+    LoginPopoutComponent,
+    SignupComponent
+  ]
 })
 export class AppModule { }

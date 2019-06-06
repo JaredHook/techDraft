@@ -1,0 +1,38 @@
+.popout {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 20;
+}
+
+.ui.segment {
+  border-radius: 0;
+}
+
+.ui.inverted.black.segment {
+  background-color: black!important;
+}
+
+.ui.form input[type=text], .ui.form input[type=email], .ui.form input[type=password] {
+  background: rgba(255, 255, 255, 0.15);
+  color: whitesmoke;
+}
+
+.ui.form .field > label {
+  color: #6e7589;
+  text-align: left;
+  font-size: 15px;
+}
+
+.ui.form .fields {
+margin: 0;
+}
+
+.hide {
+  display: none;
+}
+
+.ui.basic.red.label {
+  background-color: transparent !important;
+}

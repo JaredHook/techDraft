@@ -1,0 +1,57 @@
+<div class="ui popout content">
+  <div class="ui very padded raised black inverted segment">
+    <form class="ui huge form" [formGroup]="signupForm" (ngSubmit)="onSubmit()">
+      <h1>Register Now</h1>
+      <div class="fields">
+        <div class="field">
+          <label id="firstName">First Name</label>
+          <input type="text" id="firstName" formControlName="firstName" [(ngModel)]="userModel.firstName">
+        </div>
+
+        <div class="field">
+          <label id="lastName">Last Name</label>
+          <input type="text" id="lastName" formControlName="lastName" [(ngModel)]="userModel.lastName">
+        </div>
+      </div>
+
+      <div class="required field" [class.error]="userName.invalid && userName.touched">
+        <label id="userName">Username</label>
+        <input type="text" id="userName" formControlName="userName" [(ngModel)]="userModel.userName">
+        <div *ngIf="userName.invalid && userName.touched">
+          <div *ngIf="userName.errors?.required" class="ui pointing red basic label">Username is required</div>
+          <div *ngIf="userName.errors?.minlength" class="ui pointing red basic label">Username must be at least 3 characters</div>
+        </div>
+      </div>
+
+      <div class="required field" [class.error]="email.invalid && email.touched">
+        <label id="email">E-mail</label>
+        <input type="email" id="email" formControlName="email" [(ngModel)]="userModel.email">
+        <div *ngIf="email.invalid && email.touched">
+          <div *ngIf="email.errors?.required" class="ui pointing red basic label">Email is required</div>
+          <div *ngIf="email.errors?.email" class="ui pointing red basic label">Not a valid email</div>
+        </div>
+      </div>
+
+      <div class="required field" [class.error]="password.invalid && password.touched">
+        <label id="password">Password</label>
+        <input type="password" id="password" formControlName="password" [(ngModel)]="userModel.password">
+        <div *ngIf="password.invalid && password.touched">
+          <div *ngIf="password.errors?.required" class="ui pointing red basic label">Password is required</div>
+          <div *ngIf="password.errors?.pattern" class="ui pointing red basic label">Must contain at least one number, one special character and one uppercase and lowercase letter, and at least 8 or more characters</div>
+        </div>
+      </div>
+
+      <div class="required field" [class.error]="password2.invalid && password2.touched || signupForm.errors?.misMatch">
+        <label id="password2">Re-enter Password</label>
+        <input type="password" id="password2" formControlName="password2">
+        <div *ngIf="password2.invalid && password2.touched || signupForm.errors?.misMatch">
+          <div *ngIf="password.errors?.required" class="ui pointing red basic label">Please re-enter your password</div>
+          <div *ngIf="signupForm.errors?.misMatch" class="ui pointing red basic label">Passwords do not match</div>
+        </div>
+      </div>
+
+      <button [disabled]="!signupForm.valid" class="ui fluid yellow large submit button" [routerLink]="['userProfile']"><span>Sign Up</span></button>
+      <a href="">Already a member?</a>
+    </form>
+  </div>
+</div>
