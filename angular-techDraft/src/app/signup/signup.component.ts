@@ -13,7 +13,8 @@ import { PasswordValidator } from '../Validators/password-validator';
   styleUrls: ['./signup.component.css']
 })
 export class SignupComponent implements OnInit {
-  constructor(public dialogRef: MatDialogRef<SignupComponent>, private fb: FormBuilder) {  }
+  constructor(public dialogRef: MatDialogRef<SignupComponent>, private fb: FormBuilder) { }
+  //these are some getters to help with readability in the html
   get userName() {
     return this.signupForm.get('userName');
   }
@@ -35,9 +36,9 @@ export class SignupComponent implements OnInit {
     lastName: [''],
     userName: ['', [Validators.required, Validators.minLength(3)]],
     email: ['', [Validators.required, Validators.email]],
-    password: ['', [Validators.required, Validators.pattern('(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[$@$!%*?&])[A-Za-z\d$@$!%*?&].{8,}')]],
+    password: ['', [Validators.required, Validators.pattern('(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[$@$!%*?&])[A-Za-z\d$@$!%*?&].{8,}')]],// this pattern is something i found to require 8 characters, a special character, a number, and at least one capital and lowercase letter
     password2: ['', Validators.required]
-  }, { validator: PasswordValidator });
+  }, { validator: PasswordValidator });//custom password comparison validator
 
   onNoClick(): void {
     this.dialogRef.close();
