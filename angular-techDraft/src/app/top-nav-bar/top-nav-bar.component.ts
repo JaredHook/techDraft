@@ -6,6 +6,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./top-nav-bar.component.css']
 })
 export class TopNavBarComponent implements OnInit {
+    status: boolean = false;
+  clickEvent() {
+    this.status = !this.status;
+  }
 
   constructor() { }
 
