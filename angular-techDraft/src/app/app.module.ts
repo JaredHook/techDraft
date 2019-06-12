@@ -23,6 +23,7 @@ import { TabComponent } from './tab/tab.component';
 import { AboutComponent } from './about/about.component';
 import { ProfileMenuComponent } from './profile-menu/profile-menu.component';
 import { ProgressBarComponent } from './progress-bar/progress-bar.component';
+import { ChallengesFormComponent } from './challenges-form/challenges-form.component';
 
 const routes: Routes = [
   { path: '', component: HomePageComponent },
@@ -51,7 +52,8 @@ const routes: Routes = [
     TeamTableComponent,
     AboutComponent,
     ProfileMenuComponent,
-    ProgressBarComponent
+    ProgressBarComponent,
+    ChallengesFormComponent
   ],
    
   imports: [
