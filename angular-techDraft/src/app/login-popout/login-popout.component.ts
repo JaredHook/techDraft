@@ -7,11 +7,19 @@ import { MatDialogRef, MAT_DIALOG_DATA } from '@angular/material';
   styleUrls: ['./login-popout.component.css']
 })
 export class LoginPopoutComponent implements OnInit {
+  get onNoClick(): () => void {
+    return this._onNoClick;
+  }
+
+  set onNoClick(value: () => void) {
+    this._onNoClick = value;
+  }
 
   constructor(
     public dialogRef: MatDialogRef<LoginPopoutComponent>) { }
 
-  onNoClick(): void {
+  // tslint:disable-next-line:variable-name
+  private _onNoClick = (): void => {
     this.dialogRef.close();
   }
 

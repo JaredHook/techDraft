@@ -1,22 +1,23 @@
 <div class="col">
-  <form class="ui huge form">
+  <form  #myForm="ngForm" (ngSubmit)="submitForm()"class="ui huge form">
     <div class="field">
       <h1>LOGIN</h1>
       <label id="label1">Email</label>
-      <input type="text" id="input1">
+       <input type="email"  id ="input1" name="email" required [(ngModel)]="email" class="form-control input-underline input-lg" placeholder="email"  >
     </div>
     <div class="field">
-      <label id="label1">Password</label>
-      <input type="text" id="input1">
+      <label id="label11">Password</label>
+      <input type="password" required minlength="8" name="password" [(ngModel)]="password" class="form-control" placeholder="password">
     </div>
-    <div id="label2" class="field">
-      <a href="">Forgot password?</a>
+    <div class="field" id="label2">
+
     </div>
-    <button class="ui fluid yellow large submit  button" [routerLink]="['userProfile']"><span>LOGIN</span></button>
+    <button class="ui fluid yellow large submit  button" [disabled]="!myForm.form.valid" [routerLink]="['userProfile']"><span>LOGIN</span></button>
     <div id="label3" class="field">
-      <a href="">Sign up as a creator </a>
+
     </div>
   </form>
 </div>
+
 
 
