@@ -1,3 +1,4 @@
+<app-sidebar [status]="status"></app-sidebar>
 <div class="ui large menu navbar inverted">
   <div class="ui container">
     <a class="active item">Home</a>
@@ -10,6 +11,11 @@
       </div>
       <div class="item">
         <button class="ui primary button" (click)="openSignupDialog()">Sign Up</button>
+      </div>
+      <div class="item">
+        <a class="view-ui item" (click)="clickEvent()">
+          <i class="sidebar icon"></i> Menu
+        </a>
       </div>
     </div>
   </div>

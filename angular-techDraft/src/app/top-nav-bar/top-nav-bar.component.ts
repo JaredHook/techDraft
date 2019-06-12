@@ -3,6 +3,7 @@ import { MatDialog, MatDialogRef, MatDialogConfig, MAT_DIALOG_DATA } from '@angu
 import { LoginPopoutComponent } from '../login-popout/login-popout.component';
 import { SignupComponent } from '../signup/signup.component';
 
+
 @Component({
   selector: 'app-top-nav-bar',
   templateUrl: './top-nav-bar.component.html',
@@ -23,6 +24,8 @@ export class TopNavBarComponent implements OnInit {
     const signupDialogRef = this.dialog.open(SignupComponent, signupDialogConfig);
     /*signupDialogRef.afterClosed().subscribe();*/
   }
+
+  constructor() { }
 
   ngOnInit() {
   }
