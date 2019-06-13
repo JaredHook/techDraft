@@ -30,6 +30,8 @@ export class SignupComponent implements OnInit {
   userModel = new User('', '', '', '', '');
   show: Boolean = false;
   showEye: Boolean = false;
+  show2: Boolean = false;
+  showEye2: Boolean = false;
 
   ngOnInit() {
   }
