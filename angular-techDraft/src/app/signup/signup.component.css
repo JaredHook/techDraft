@@ -38,3 +38,7 @@ margin: 0;
   color: antiquewhite !important;
   border-color:antiquewhite !important;
 }
+
+.ui.dimmer {
+  position: fixed;
+}
