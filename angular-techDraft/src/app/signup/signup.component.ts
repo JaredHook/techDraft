@@ -28,6 +28,8 @@ export class SignupComponent implements OnInit {
     return this.signupForm.get('password2');
   }
   userModel = new User('', '', '', '', '');
+  show: Boolean = false;
+  showEye: Boolean = false;
 
   ngOnInit() {
   }
@@ -48,5 +50,15 @@ export class SignupComponent implements OnInit {
   onSubmit() {
     console.log(this.userModel);
     this.dialogRef.close();
+  }
+
+  showPassword() {
+    this.show = !this.show;
+    this.showEye = !this.showEye;
+  }
+
+  showPassword2() {
+    this.show2 = !this.show2;
+    this.showEye2 = !this.showEye2;
   }
 }

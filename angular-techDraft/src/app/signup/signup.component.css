@@ -33,6 +33,8 @@ margin: 0;
   display: none;
 }
 
-.ui.basic.red.label {
+.ui.basic.white.label {
   background-color: transparent !important;
+  color: antiquewhite !important;
+  border-color:antiquewhite !important;
 }
