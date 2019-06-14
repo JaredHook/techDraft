@@ -11,6 +11,7 @@ import { SignupComponent } from '../signup/signup.component';
 })
 export class TopNavBarComponent implements OnInit {
 
+  status: boolean;
   constructor(public dialog: MatDialog) { }
 
   openLoginDialog(): void {
@@ -23,6 +24,10 @@ export class TopNavBarComponent implements OnInit {
     const signupDialogConfig = new MatDialogConfig();
     const signupDialogRef = this.dialog.open(SignupComponent, signupDialogConfig);
     /*signupDialogRef.afterClosed().subscribe();*/
+  }
+
+  clickEvent() {
+    this.status = !this.status;
   }
 
   ngOnInit() {
