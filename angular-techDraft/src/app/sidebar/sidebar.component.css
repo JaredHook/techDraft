@@ -15,11 +15,11 @@
 }
 
 
-.hidden {
+.visible {
   z-index: 1000 !important;
   position: fixed;
   height: 100%;
-  width: 0;
+  width: 100%;
   margin-left: 0px !important;
   left: 250px;
   top: 0;
