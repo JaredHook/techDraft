@@ -1,0 +1,24 @@
+<div class="ui two column grid">
+  <div class="stretched row">
+    <div class="five wide column">
+    </div>
+    <div class="column">
+      <div class="ui container">
+        <form (ngSubmit)="onSubmit(f)" #f="ngForm">
+          <div *ngFor="let field of fields">
+            <app-benchmark-field></app-benchmark-field>
+          </div>
+          <button type="submit" class="circular ui icon right floated button" [disabled]="!f.valid" (click)="addField()">
+            <i class="plus  big circle icon "></i>
+          </button>
+          <div>
+            <button type="submit" class="ui right floated button" [disabled]="!f.valid">
+              Submit
+            </button>
+          </div>
+        </form>
+      </div>
+      <app-progress-bar [percent]="percentage"></app-progress-bar>
+    </div>
+  </div>
+</div>

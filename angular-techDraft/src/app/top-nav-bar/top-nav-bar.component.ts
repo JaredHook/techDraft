@@ -25,7 +25,7 @@ export class TopNavBarComponent implements OnInit {
     /*signupDialogRef.afterClosed().subscribe();*/
   }
 
-  constructor() { }
+ 
 
   ngOnInit() {
   }

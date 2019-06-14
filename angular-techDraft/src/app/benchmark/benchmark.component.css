@@ -1,0 +1,41 @@
+.ui.grid {
+    margin-top: 6rem;
+    margin-bottom: -1rem;
+    margin-left: -1rem;
+    margin-right: -1rem;
+  }
+  
+  
+  .ui.horizontal.segments {
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    background-color: #FFF;
+    box-shadow: 0 1px 2px 0 rgba(34,36,38,.15);
+    margin: 4rem 0 0 0 !important;
+    border-radius: .28571429rem;
+    border: 1px solid rgba(34,36,38,.15);
+  }
+  
+  .ui.form input:not([type]), .ui.form input[type=date], .ui.form input[type=datetime-local], .ui.form input[type=email], .ui.form input[type=file], .ui.form input[type=number], .ui.form input[type=password], .ui.form input[type=search], .ui.form input[type=tel], .ui.form input[type=text], .ui.form input[type=time], .ui.form input[type=url], .ui.form textarea {
+    width: 50px;
+  }
+  
+  
+  
+  i.icon {
+    margin: 0 .25rem 5rem 4rem;
+  }
+  
+  
+  .ui[class*="right floated"].button, .ui[class*="right floated"].buttons {
+    float: right;
+    margin-right: 234px;
+    margin-left: .25em;
+  }
+  
+  
+  input.ng-invalid.ng-touched {
+    border: 1px solid red;
+  }
+  
