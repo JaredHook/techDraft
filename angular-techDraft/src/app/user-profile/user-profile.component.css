@@ -8,3 +8,7 @@
   border-radius: .28571429rem;
   border: 1px solid rgba(34,36,38,.15);
 }
+
+.ui.grid {
+  margin-top: 5rem;
+}
