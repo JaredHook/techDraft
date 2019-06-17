@@ -25,11 +25,14 @@ import { AboutComponent } from './about/about.component';
 import { ProfileMenuComponent } from './profile-menu/profile-menu.component';
 import { ProgressBarComponent } from './progress-bar/progress-bar.component';
 import { SignupComponent } from './signup/signup.component';
+import { BenchmarkComponent } from './benchmark/benchmark.component';
+import { BenchmarkFieldComponent } from './benchmark-field/benchmark-field.component';
 
 const routes: Routes = [
   { path: '', component: HomePageComponent },
   { path: 'userProfile', component: UserProfileComponent },
-  { path: 'userProfile/editProfile', component: EditProfileCompComponent }
+  { path: 'userProfile/editProfile', component: EditProfileCompComponent },
+  { path: 'userProfile/benchmark', component: BenchmarkComponent }
 ];
 
 @NgModule({
@@ -54,7 +57,9 @@ const routes: Routes = [
     AboutComponent,
     ProfileMenuComponent,
     ProgressBarComponent,
-    SignupComponent
+    SignupComponent,
+    BenchmarkComponent,
+    BenchmarkFieldComponent
   ],
    
   imports: [

@@ -11,5 +11,6 @@ h3 {
 }
 
 .ui.tiny.progress .bar {
-  width: 50%;
+  width: 0%;
+  max-width: 100%;
 }
