@@ -13,19 +13,21 @@ import { Router, ActivatedRoute } from '@angular/router';
 export class BenchmarkComponent implements OnInit {
   fields: Array<any> 
   @ViewChildren(BenchmarkFieldComponent) benchmarkFields !: QueryList<BenchmarkFieldComponent>;
-  percentage: number;
+  percent: number = 0;
 
   constructor() { 
     this.fields = [`<app-benchmark-field></app-benchmark-field>`];
   }
 
-  ngOnInit() {}
+  ngOnInit() {
+    
+  }
 
   onSubmit(form: ElementRef) {
     let arr: Array<number> = []
     let avg: number
-    let sum: number = 0; 
-    // console.log(this.benchmarkFields.length);   //  print length of array
+    let sum: number = 0;
+    let percentage: number = 100;
 
     this.benchmarkFields.toArray().forEach(function (el, index) {
        arr.push(el.userScore.score)
@@ -38,11 +40,9 @@ export class BenchmarkComponent implements OnInit {
     }
 
     avg = sum / arr.length
-    //console.log(avg)
-    this.percentage = avg
-    console.log(this.percentage)
-    
-  }
+    this.percent = avg  // (avg / sum)  * percentage
+   // console.log(this.percent)  // used to printout percentage works okay.
+  } 
 
   addField() {
     this.fields.push(`<app-benchmark-field></app-benchmark-field>`)

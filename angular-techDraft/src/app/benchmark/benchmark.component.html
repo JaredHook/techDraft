@@ -12,13 +12,13 @@
             <i class="plus  big circle icon "></i>
           </button>
           <div>
-            <button type="submit" class="ui right floated button" [disabled]="!f.valid">
+            <button type="submit" class="ui right floated button" [disabled]="!f.valid" (click)="onSubmit()">
               Submit
             </button>
           </div>
         </form>
       </div>
-      <app-progress-bar [percent]="percentage"></app-progress-bar>
+      <app-progress-bar [percent]="percent"></app-progress-bar>
     </div>
   </div>
 </div>
